@@ -1,16 +1,19 @@
+import Navbar from "./Navbar";
+
 const Home = () => {
     return (
     
-    
-    <div>
-             hhhhh
-    </div>
+     <>
+     <Navbar />
+
+  
+    </>
             
         
         
         
         
-        );
+  );
 }
  
 export default Home;
