@@ -1,7 +1,7 @@
 const Navbar = () => {
     return ( 
 
-<div className="main-div">
+<div className="main-div container mx-auto">
 
 
 
@@ -14,25 +14,24 @@ const Navbar = () => {
           </ul>
           <div className="btn bg-orange-500">Hire me</div>
 
-       </nav>
-       <div class=" flex ">
-       <div class="card-body w-1/2 ">
-         <h2 class="card-title ">New album is released!</h2>
-         <p className="mb-0">Click the button to listen on Spotiwhy app.</p>
-        
+      </nav>
 
-          <button className="btn w-40 mt-1">hire me</button>
+      {/* banner */}
+      <div class=" flex  items-center gap-4">
+        {/* writing section */}
+       <div class=" w-1/2 ">
+         <h2 class="card-title text-6xl ">Hello! This is Md Reaz</h2>
+         <p className="mb-0 text-xl">Hello! This is Md Reaz.</p>
+          <button className="btn w-40 mt-1 bg-orange-400">more about me</button>
+       </div>
+       {/* image-holder */}
+       <div className="min-h-96 w-1/2 bg-slate-400 border">
+        <img src="" alt="" />
+       </div>
 
+  
 
-    
-     </div>
-      <figure className="w-1/2 h-96">
-    <img className="w-full h-5/6"
-      src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-      alt="Album" />
-      </figure>
-
-</div>
+      </div>
 
 
 
