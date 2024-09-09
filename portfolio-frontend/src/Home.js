@@ -1,10 +1,13 @@
 import Navbar from "./Navbar";
 
+
 const Home = () => {
     return (
     
      <>
-     <Navbar />
+     <h1 className="text-center text-3xl ">Home</h1>
+ 
+
 
   
     </>
