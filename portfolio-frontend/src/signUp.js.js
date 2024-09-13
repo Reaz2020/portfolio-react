@@ -16,6 +16,28 @@ const SignUp = () => {
     })
   }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();  
+
+    const response = await  fetch('http://localhost:8080/demo', {
+    method:'POST', body:JSON.stringify(form),
+    headers:{
+      'Content-Type':'application/json'
+    }
+  
+  })
+
+    
+  //response from backend passing like text format in next line 
+  // const data= await response.text();
+
+  //response from backend passing like JSON format in next line 
+  const data= await response.json();
+  console.log(data)
+  
+  
+  }; 
+  
 
 
 
@@ -24,12 +46,13 @@ const SignUp = () => {
 
       <h1 className='text-center my-4'>SIGN UP COMPONENT</h1>
 
-      <form action="" className='text-center'>
+      <form action="" className='text-center' onSubmit={handleSubmit}>
 
 
 
-        <input type="text" placeholder='Name' name='name' onChange={handleForm}/>
-        <input type="text" placeholder='Email' name='email' onChange={handleForm}/>
+        <input type="text" placeholder='Name' name='name' onChange={handleForm} /> <br />
+        <input type="text" placeholder='Email' name='email' onChange={handleForm}/> <br />
+        <button>Submit</button>
 
 
       </form>
